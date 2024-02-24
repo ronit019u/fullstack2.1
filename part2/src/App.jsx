@@ -49,14 +49,14 @@ const App = () => {
       })
       .catch(error => {
         alert(
-          `the note '${note.content}' was already deleted from server`
+          `the note '${noteObject.content}' was already deleted from server`
         )
         setNotes(notes.filter(n => n.id !== id))
       })
   }
 
   const toggleImportanceOf = id => {
-    const url = `http://localhost:3002/notes/${id}`
+    const url = `http://localhost:3002/api/notes/${id}`
     const note = notes.find(n => n.id === id)
     const changedNote = { ...note, important: !note.important }
   

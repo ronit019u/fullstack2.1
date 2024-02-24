@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 
 import axios from 'axios'
 
-axios.get('http://localhost:3002/notes').then(response => {
+axios.get('http://localhost:3002/api/notes').then(response => {
   const notes = response.data
   ReactDOM.createRoot(document.getElementById('root')).render(<App notes={notes} />)
 })
@@ -12,7 +12,7 @@ axios.get('http://localhost:3002/notes').then(response => {
 const promise2 = axios.get('http://localhost:3002/foobar')
 console.log(promise2)
 
-const promise = axios.get('http://localhost:3002/notes')
+const promise = axios.get('http://localhost:3002/api/notes')
 
 promise.then(response => {
   console.log(response)
