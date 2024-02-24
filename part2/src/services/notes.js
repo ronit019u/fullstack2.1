@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = '/api/notes'
+const baseUrl = 'https://render-backend-3sj5.onrender.com/'
 
 /*
 const getAll = () => {
