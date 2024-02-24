@@ -18,12 +18,12 @@
     {
       "id": "4",
       "content": "a new note ...nj",
-      "important": true
+      "important": false
     },
     {
       "id": "5",
       "content": "bbb",
-      "important": true
+      "important": false
     },
     {
       "id": "1155",
@@ -74,6 +74,11 @@
       "id": "e0c8",
       "content": "ttt",
       "important": false
+    },
+    {
+      "id": "90d7",
+      "content": "rtttt",
+      "important": true
     }
   ]
 }
